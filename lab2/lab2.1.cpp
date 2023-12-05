@@ -1,6 +1,6 @@
-```cpp
 #include <stdlib.h>
 #include <iostream>
+#include <cstring>
 
 //define a structure TwoInts with two int members a and b
 struct TwoInts
@@ -54,16 +54,16 @@ int main()
     //print the values of the 1st element of the array arr in s
     std::cout << s.arr[0] << std::endl; //output: 25
 
-    // Change the value of the 1st element of the array arr through the pointer
+    //change the value of the 1st element of the array arr through the pointer
     sPointer->arr[0] = 30;
 
-    // Print the values of the 1st element of the array arr in s
+    //print the values of the 1st element of the array arr in s
     std::cout << s.arr[0] << std::endl; //output: 30
 
-    // Change the pointer to point to the memory location of 's1'
+    //change the pointer to point to the memory location of 's1'
     sPointer = &s1;
 
-    // Change the value of the 1st element of the array arr through the pointer
+    //change the value of the 1st element of the array arr through the pointer
     sPointer->arr[0] = 35;
 
     //print the values of the 1st elements of the arrays arr in s and s1
@@ -98,4 +98,3 @@ int main()
     //end
     return 0;
 }
-```
